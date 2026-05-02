@@ -1,0 +1,19 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Ignore ns-3 completely
+ns-3-dev/
+
+# Data outputs
+data/*.csv
+data/*.txt
+data/*.pkl
+
+# Results & logs
+results/
+logs/
+
+# OS
+.DS_Store

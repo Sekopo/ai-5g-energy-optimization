@@ -1,0 +1,14 @@
+ns3_path: /home/masheane-sekopo/ns-3-dev
+
+data_path: /home/masheane-sekopo/Documents/5th Year (B.Eng)/Final-Year Project/Final Version/ai-5g-project/data
+
+episodes: 20
+
+actions:
+  - 200
+  - 160
+  - 100
+
+reward:
+  latency_weight: 2
+  loss_weight: 100
