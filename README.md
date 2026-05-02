@@ -21,17 +21,7 @@ Objectives
 
 System Architecture
 
-NS-3 Simulation (sim.cc)
-        ↓
-   state.txt (network load)
-        ↓
-   ai_infer.py → selects power level
-        ↓
-NS-3 applies action → computes reward
-        ↓
-reward.txt + next_state.txt
-        ↓
-   ai_train.py → updates Q-table
+NS-3 Simulation (sim.cc) -> state.txt (network load) -> ai_infer.py (selects power level) -> NS-3 applies action (computes reward) -> reward.txt + next_state.txt -> ai_train.py (updates Q-table)
 
 
 Technologies Used
@@ -44,18 +34,18 @@ Technologies Used
 Project Structure
 
 AI-5G-PROJECT/
-├── config/                # Configuration files
-├── data/                  # AI scripts and runtime files
-│   ├── ai_infer.py
-│   ├── ai_train.py
-│   └── ai_agent_legacy.py
-├── scripts/
-│   └── plot.py            # Graph generation
-├── ns3-sim/
-│   └── sim.cc             # NS-3 simulation file
-├── results/               # Output graphs/scripts
-├── README.md
-├── requirements.txt
+> config/                # Configuration files
+> data/                  # AI scripts and runtime files
+    - ai_infer.py
+    - ai_train.py
+    - ai_agent_legacy.py
+> scripts/
+    - plot.py            # Graph generation
+> ns3-sim/
+    - sim.cc             # NS-3 simulation file
+> results/               # Output graphs/scripts
+> README.md
+> requirements.txt
 
 
 Installation & Setup
@@ -172,7 +162,7 @@ Future Improvements
 Author
 
 Masheane Sekopo and Renang Lenkoe
-Final Year B.Eng Project – Computer Systems & Networks Engineering
+(Final Year B.Eng Project – Computer Systems & Networks Engineering)
 
 
 License
